@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.margin{width:998px;margin:0 auto;}
+
+body{background:#f8f8f8;}
+header{height:67px;}
+header .logo{float:left;margin-top:8px}
+header .header-r{float:left;color:#999;height:67px;}
+header .header-r span{font:20px/67px "";}
+header .header-r b{font:23px/67px "";}
+
+#main{margin-top:30px}
+#main .main-l{background:url(../images/denglu.jpg) no-repeat;width:640px;height:588px;float:left;}
+#main .main-r{float:left;margin-top:55px;}
+#main .main-r h3{font-size:30px;color:#ea5e00;font-weight:bold;margin-bottom:15px;}
+#main .main-r .put{width:248px;height:36px;margin-bottom:15px;padding:0 15px;}
+#main .main-r .put2{width:113px;height:36px;margin-bottom:15px;padding:0 15px;}
+#main .main-r .box #showCode{display:inline-block;border-radius:20px 5px 20px 5px;text-align:center;margin-left:5px;background:#30a31f;width:48px;font:12px/28px "";color:#333}
+#main .main-r .box1{height:24px;position:relative;}
+#main .main-r .box1 .put3{font:12px/24px "";margin-top:3px;position:absolute;left:0px;top:5px;}
+#main .main-r .box1 span{font:12px/26px "";margin-left:22px;}
+#main .main-r .box1 a{font:12px/26px "";margin-left:143px;}
+#main .main-r .p{border-bottom:1px solid #E0E0E0;padding-top:25px}
+#main .main-r #btn{margin:20px 8px;width:280px;height:44px;font:800 18px/44px "";color:#fff;background-color:RGB(180,7,7);outline:none;border:0;}
+#main .main-r .qq{font:12px/24px "";}
+#main .main-r .qq a{display: inline-block;width:26px;height:26px;margin:0 5px;}
+#main .main-r .p2{margin-top:50px;}
+#main .main-r .p2 a{margin-left:10px;font-size:14px;color:#ff9937;font-weight:bold;}
+#main .main-r .p3{width:299px;margin-top:20px;color:#999}
+footer .footer{padding:30px 0;color:#999;width:1220px;margin:0 auto;border-top:1px solid #d7d7d7;margin-top:50px;}
+footer .footer-t{text-align:center;font-size:14px;}
+footer .footer-t a{font-size:14px;color:#999;font-weight:bold;}
+footer .footer p{text-align:center;margin-top:10px;font-weight:bold;}
+
+
+
