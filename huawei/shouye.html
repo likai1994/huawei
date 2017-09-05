@@ -497,7 +497,7 @@
 				<a href="#"><img src="images/1502636146803.jpg"/></a>
 			</div>
 			<div class="rexiao-r">
-				<ul id="ul1"></ul>
+				<ul id="ul1" class="biao"></ul>
 			</div>
 		</div>
 	</section>
@@ -507,7 +507,7 @@
 			<h3>精品推荐</h3>
 		</div>
 		<div class="jingpin-b margin">
-			<ul class="ul" id="ul2"></ul>
+			<ul class="ul biao" id="ul2"></ul>
 			<div class="zuojian">
 				<span></span>
 			</div>
@@ -551,7 +551,7 @@
 				<span><a href="#">更多<i>></i></a></span>
 			</div>
 			<div class="phone-b clear">
-				<ul id="ul3">
+				<ul id="ul3" class="biao">
 					<li class="li1"><a href="#"><img src="images/1501943525568.jpg"/></a></li>					
 				</ul>
 			</div>
@@ -569,7 +569,7 @@
 				<span><a href="#">更多<i>></i></a></span>
 			</div>
 			<div class="phone-b clear">
-				<ul id="ul4">
+				<ul id="ul4" class="biao">
 					<li class="li1"><a href="#"><img src="images/1496806719360.jpg"/></a></li>
 				</ul>
 			</div>
@@ -587,7 +587,7 @@
 				<span><a href="#">更多<i>></i></a></span>
 			</div>
 			<div class="phone-b clear">
-				<ul id="ul5">
+				<ul id="ul5" class="biao">
 					<li class="li1"><a href="#"><img src="images/1503414534095.jpg"/></a></li>					
 				</ul>
 			</div>
@@ -603,7 +603,7 @@
 				<span><a href="#">更多<i>></i></a></span>
 			</div>
 			<div class="phone-b clear">
-				<ul id="ul6">
+				<ul id="ul6" class="biao">
 					<li class="li1"><a href="#"><img src="images/1501153751797.jpg"/></a></li>
 				</ul>
 			</div>
@@ -622,7 +622,7 @@
 				<span><a href="#">更多<i>></i></a></span>
 			</div>
 			<div class="phone-b clear">
-				<ul id="ul7">
+				<ul id="ul7" class="biao">
 					<li class="li0"><a href="#"><img src="images/1502330671634.jpg"/></a></li>					
 				</ul>
 			</div>
@@ -630,7 +630,7 @@
 	</section>
 	<section id="jingpin">
 		<div class="jingpin-b margin">
-			<ul class="ul" id="ul8"></ul>
+			<ul class="ul biao" id="ul8"></ul>
 			<div class="zuojian">
 				<span></span>
 			</div>
@@ -658,7 +658,7 @@
 				<span><a href="#">更多<i>></i></a></span>
 			</div>
 			<div class="phone-b clear">
-				<ul id="ul9">
+				<ul id="ul9" class="biao">
 					<li class="li0"><a href="#"><img src="images/1501815237587.jpg"/></a></li>					
 				</ul>
 			</div>
@@ -666,7 +666,7 @@
 	</section>
 	<section id="jingpin">
 		<div class="jingpin-b margin">
-			<ul class="ul" id="ul10"></ul>
+			<ul class="ul biao" id="ul10"></ul>
 			<div class="zuojian">
 				<span></span>
 			</div>
@@ -695,7 +695,7 @@
 				<span><a href="#">更多<i>></i></a></span>
 			</div>
 			<div class="phone-b clear">
-				<ul id="ul11">
+				<ul id="ul11" class="biao">
 					<li class="li0"><a href="#"><img src="images/1503018628138.jpg"/></a></li>				
 				</ul>
 			</div>
@@ -703,7 +703,7 @@
 	</section>
 	<section id="jingpin">
 		<div class="jingpin-b margin">
-			<ul class="ul" id="ul12"></ul>
+			<ul class="ul biao" id="ul12"></ul>
 			<div class="zuojian">
 				<span></span>
 			</div>
@@ -847,4 +847,10 @@
 		$(".denglu").css("display","block")
 		$(".mingzi").css("display","none")
 	})
+	
+	$(".biao").on("click","li",function(){
+			var GoodsId=$(this).attr("ord"); 
+			saveCookie("GoodsId",GoodsId,7);
+			location.href=("xiangqing.html")
+	});
 </script>
