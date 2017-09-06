@@ -115,3 +115,9 @@ $(function(){
 		}
 	});
 })
+$(".biao").on("click","li",function(){
+	var GoodsId=$(this).attr("ord"); 
+	console.log(GoodsId)
+	saveCookie("GoodsId",GoodsId,7);
+	location.href=("xiangqing.html")
+});

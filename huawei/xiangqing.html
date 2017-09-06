@@ -265,9 +265,9 @@
 			<div class="main-b-l"></div>
 			<div class="main-b-r">
 				<div class="nova-t">
-					<h3>HUAWEI nova 青春版4GB+64GB 全网通版（樱语粉）</h3>
+					<h3 class="mingzi">HUAWEI nova 青春版4GB+64GB 全网通版（樱语粉）</h3>
 					<p>直降200，到手价1799元，限时直降，欲购从速</p>
-					<b>抢购价 ¥ 1799.00</b>
+					<b class="jiage">抢购价 ¥ 1799.00</b>
 				</div>
 				<div class="nova-c">
 					<img src="images/tu.jpg" />
@@ -359,20 +359,6 @@
 			</ul>
 		</div>
 	</section>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	<section id="kefu">
 		<div class="kefu-t margin">
@@ -485,4 +471,23 @@
 		$(".denglu").css("display","block")
 		$(".mingzi").css("display","none")
 	})
+	
+	$(function(){
+		var goodsId = getCookie("GoodsId");
+		console.log(goodsId)
+		$.get("php/getGoodsInfo.php",{"goodsId":goodsId},function(data){	
+		var obj=eval(data);
+		console.log(obj);
+		$(".jiage").html("抢购价 ￥"+obj.goodsPrice);
+		$(".mingzi").html(obj.goodsName);
+//		$("#p").html(obj.goodsType);
+//		$("#img").attr("src",obj.beiyong1); 
+//		$("#xuanxiang").attr("src",obj.beiyong7);
+//		$("#box").children().children("ul").children("li").eq(1).children("img").attr("src",obj.beiyong2);
+//		$("#box").children().children("ul").children("li").eq(2).children("img").attr("src",obj.beiyong3);
+//		$("#box").children().children("ul").children("li").eq(3).children("img").attr("src",obj.beiyong4);
+//		$("#box").children().children("ul").children("li").eq(4).children("img").attr("src",obj.beiyong5);
+//		$("#box").children().children("ul").children("li").eq(5).children("img").attr("src",obj.beiyong6);
+	})
+})	
 </script>

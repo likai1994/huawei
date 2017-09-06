@@ -824,8 +824,9 @@
 <script type="text/javascript" src="js/shouye.js"></script>
 <script type="text/javascript" src="js/lunbotu1.js" ></script>
 <script type="text/javascript" src="js/lunbotu.js" ></script>
-<script type="text/javascript" src="js/shouyeshujuku.js" ></script>
 <script type="text/javascript" src="js/cookieTools.js" ></script>
+<script type="text/javascript" src="js/shouyeshujuku.js" ></script>
+
 <script src="dist/js/swiper.min.js"></script>
 <script>        
 	var mySwiper = new Swiper ('.swiper-container', {
@@ -833,7 +834,6 @@
     loop: true,//是否可以循环拖动
     autoplay:2000,//是否自动播放
   	})
-	
 	
 	$(document).ready(function(){
 	  	if(getCookie("userId")!=""){
@@ -848,9 +848,5 @@
 		$(".mingzi").css("display","none")
 	})
 	
-	$(".biao").on("click","li",function(){
-			var GoodsId=$(this).attr("ord"); 
-			saveCookie("GoodsId",GoodsId,7);
-			location.href=("xiangqing.html")
-	});
+	
 </script>
