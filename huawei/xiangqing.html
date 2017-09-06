@@ -259,15 +259,23 @@
 			<span>></span>
 			<a href="#">HUAWEI nova系列</a>
 			<span>></span>
-			<b>HUAWEI nova 青春版4GB+64GB 全网通版（樱语粉）</b>
+			<b class="mingzi"></b>
+			<span></span>
+			<i></i>
+			<i></i>
 		</div>
 		<div class="main-b margin clear">
 			<div class="main-b-l"></div>
 			<div class="main-b-r">
 				<div class="nova-t">
-					<h3 class="mingzi">HUAWEI nova 青春版4GB+64GB 全网通版（樱语粉）</h3>
-					<p>直降200，到手价1799元，限时直降，欲购从速</p>
-					<b class="jiage">抢购价 ¥ 1799.00</b>
+					<div class="hezi">
+						<h3 class="mingzi"></h3>
+						<span></span>
+						<i class="i1"></i>
+						<i class="i2"></i>
+					</div>
+					<p class="miao"></p>
+					<b class="jiage"></b>
 				</div>
 				<div class="nova-c">
 					<img src="images/tu.jpg" />
@@ -310,7 +318,7 @@
 						<span>选择套餐</span>
 						<b>官方标配</b>
 					</div>
-					<p>已选择商品:<b>樱语粉 / 全网通版 / 4GB+64GB / 官方标配</b></p>
+					<p>已选择商品:<b>樱语粉</b>/<i>全网通版</i>/<span>4GB+64GB</span>/官方标配</b></p>
 					<div class="num">
 						<div class="num-l">
 							<input type="text" id="jianshu" value="1" disabled="disabled"/>
@@ -336,9 +344,7 @@
 			</p>
 		</div>
 		<div class="xuan">
-			<img src="images/201707172110068441469.jpg"/>
-			<img src="images/201707172110071046280.jpg"/>
-			<img src="images/201707140905577667292.jpg"/>
+			<img class="img" src=""/>
 		</div>
 		<div class="xuan1">
 			<ul>
@@ -475,19 +481,18 @@
 	$(function(){
 		var goodsId = getCookie("GoodsId");
 		console.log(goodsId)
-		$.get("php/getGoodsInfo.php",{"goodsId":goodsId},function(data){	
-		var obj=eval(data);
+		$.get("php/getGoodsInfo.php",{"goodsId":goodsId},function(date){	
+		var obj=eval("("+date+")");
 		console.log(obj);
 		$(".jiage").html("抢购价 ￥"+obj.goodsPrice);
 		$(".mingzi").html(obj.goodsName);
-//		$("#p").html(obj.goodsType);
-//		$("#img").attr("src",obj.beiyong1); 
-//		$("#xuanxiang").attr("src",obj.beiyong7);
-//		$("#box").children().children("ul").children("li").eq(1).children("img").attr("src",obj.beiyong2);
-//		$("#box").children().children("ul").children("li").eq(2).children("img").attr("src",obj.beiyong3);
-//		$("#box").children().children("ul").children("li").eq(3).children("img").attr("src",obj.beiyong4);
-//		$("#box").children().children("ul").children("li").eq(4).children("img").attr("src",obj.beiyong5);
-//		$("#box").children().children("ul").children("li").eq(5).children("img").attr("src",obj.beiyong6);
+		$(".miao").html(obj.beiyong1);
+		$(".img").attr("src",obj.beiyong2); 
+		$(".main-b-l").children().children("ul").children("li").eq(1).children("img").attr("src",obj.beiyong3);
+		$(".main-b-l").children().children("ul").children("li").eq(2).children("img").attr("src",obj.beiyong4);
+		$(".main-b-l").children().children("ul").children("li").eq(3).children("img").attr("src",obj.beiyong5);
+		$(".main-b-l").children().children("ul").children("li").eq(4).children("img").attr("src",obj.beiyong6);
+		$(".main-b-l").children().children("ul").children("li").eq(5).children("img").attr("src",obj.beiyong7);
 	})
 })	
 </script>

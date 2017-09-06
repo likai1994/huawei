@@ -53,8 +53,11 @@ nav .box .box-b ul li h3{width:100%;font:700 14px/20px "";color:#cc0e11;text-ali
 #main .main-b .main-b-l{float:left;}
 #main .main-b .main-b-r{float:left;padding-left:30px}
 #main .main-b .main-b-r .nova-t{border-bottom:1px solid #ddd;padding-bottom:10px;}
-#main .main-b .main-b-r .nova-t h3{font-size:28px;}
-#main .main-b .main-b-r .nova-t p{color:#3a3a3a;font-size:12px;margin:10px 0;}
+#main .main-b .main-b-r .nova-t .hezi{height:32px}
+#main .main-b .main-b-r .nova-t .hezi h3{font-size:28px;float:left;}
+#main .main-b .main-b-r .nova-t .hezi span{float:left;font-size:28px;font-weight:bold}
+#main .main-b .main-b-r .nova-t .hezi i{font-size:28px;font-weight:bold}
+#main .main-b .main-b-r .nova-t p{color:#3a3a3a;font-size:12px;margin:10px 0;width:642px}
 #main .main-b .main-b-r .nova-t b{color:#ca141d;font-size:18px;}
 #main .main-b .main-b-r .nova-c{border-bottom:1px solid #ddd;}
 #main .main-b .main-b-r .nova-c img{margin:20px 0;}
@@ -83,7 +86,7 @@ nav .box .box-b ul li h3{width:100%;font:700 14px/20px "";color:#cc0e11;text-ali
 #shouhou .shouhou p a{margin: 0 25px;font-size: 18px;padding: 0 10px 6px 10px;text-align: center;}
 #shouhou .xuan img{width:100%;height:100%}
 
-#shouhou .xuan1{border-top:1px solid #A8A8A8}
+#shouhou .xuan1{border-top:1px solid #A8A8A8;display:none;}
 #shouhou .xuan1 ul{margin-left:300px;margin-top: 20px;}
 #shouhou .xuan1 ul li{font-size:14px;color:#3a3a3a;margin-bottom:9px;}
 #shouhou .xuan1 ul li b{width:128px;display:inline-block;}

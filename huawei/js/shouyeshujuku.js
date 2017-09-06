@@ -10,7 +10,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul1").append(str);
 			}
 			for(i=8;i<20;i++){
@@ -19,7 +19,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul2").append(str);
 			}
 			for(i=20;i<27;i++){
@@ -28,7 +28,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul3").append(str);
 			}
 			for(i=27;i<30;i++){
@@ -37,7 +37,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul4").append(str);
 			}
 			for(i=30;i<37;i++){
@@ -46,7 +46,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul5").append(str);
 			}
 			for(i=37;i<44;i++){
@@ -55,7 +55,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul6").append(str);
 			}
 			for(i=44;i<50;i++){
@@ -64,7 +64,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul7").append(str);
 			}
 			for(i=50;i<62;i++){
@@ -73,7 +73,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul8").append(str);
 			}
 			for(i=62;i<68;i++){
@@ -82,7 +82,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul9").append(str);
 			}
 			for(i=68;i<80;i++){
@@ -91,7 +91,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul10").append(str);
 			}
 			for(i=80;i<86;i++){
@@ -100,7 +100,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul11").append(str);
 			}
 			for(i=86;i<98;i++){
@@ -109,7 +109,7 @@ $(function(){
 				let goodsImg=obj[i].goodsImg;//图片
 				let goodsName=obj[i].goodsName;//名字
 				let goodsDesc=obj[i].goodsDesc;//描述
-				let str="<li><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
+				let str="<li ord="+goodsId+"><a href='#'><img src='"+goodsImg+"'/><h4>"+goodsName+"</h4><p>"+goodsDesc+"</p><span>￥"+goodsPrice+"</span></a></li>";
 				$("#ul12").append(str);
 			}
 		}
@@ -117,7 +117,6 @@ $(function(){
 })
 $(".biao").on("click","li",function(){
 	var GoodsId=$(this).attr("ord"); 
-	console.log(GoodsId)
 	saveCookie("GoodsId",GoodsId,7);
 	location.href=("xiangqing.html")
 });
