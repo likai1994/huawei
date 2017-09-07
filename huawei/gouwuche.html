@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>购物车</title>
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<link href="css/gouwuche.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="header margin clear">
+		<div class="header-l clear">
+			<ul>
+				<li>
+					<a href="#">华为官网</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">荣耀官网</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">花粉俱乐部</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">帮助中心</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">V码（优购码）</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">Select Region</a>
+					<span>|</span>
+				</li>
+				<li class="li">
+					<a href="javascript:;">更多精彩<img id="img" src="images/22.jpg"</a>
+				</li>
+			</ul>
+			<div class="emui">
+				<dl>
+					<dt>EMUI</dt>
+					<dt>应用市场</dt>
+					<dt>云服务</dt>
+					<dt>开发者联盟</dt>
+				</dl>
+				<div class="emui-b">
+					<img src="images/qrcode_vmall_new_app01.png"/>
+					<p>扫一扫，<a href="#">下载客户端</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="header-r">
+			<ul>
+				<li class="denglu">
+					<a href="denglu.html">请登录</a>
+					<span>|</span>
+				</li>
+				<li class="mingzi" style="display:none;">
+					<a href="javascript:;" id="name"></a>
+					<a id="zhuxiao" style="color:#999;display:inline-block;">注销</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="zhuce.html">注册</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">我的订单</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a class="gouwuche" href="#">购物车</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+<section id="shopCar" class="margin1">
+	<div class="order-title">
+		<div class="logo">
+			<img src="images/gou.jpg"/>
+		</div>
+		<ul class="shopping-step">
+			<li class="step first focus">查看购物车</li>
+			<li class="step">填写订单</li>
+			<li class="step last">付款，完成购买</li>
+		</ul>
+	</div>
+	<div id="tipsbox" class="tipsbox margin1">
+		<a href="#" class="btn-close" title="关闭"></a>
+		<strong>温馨提示：</strong>1. 选购单中的商品不保留库存，请及时结算。 2. 商品的价格、相关活动信息及库存以订单提交时为准。
+	</div>
+	<div id="Y_CartListWrap" class="margin1">
+		<div class="pay-wapper margin1">
+			<div class="cart-title">
+				<p class="left selectAll" style="width:75.8px;">
+					 全选
+				</p>
+				<p class="left" style="width:380px">商品信息</p>
+				<p class="left" style="width:130.2px">单价</p>
+				<p class="left" style="width:139.5px">数量</p>
+				<p class="left" style="width:148.8px">小计</p>
+				<p class="right">操作</p>
+			</div>
+		</div>
+		<div class="ordinary">
+			<code>普通商品</code> 已免运费
+		</div>
+		<div class="promotion-pool">
+			<div class="gift-sell mt20">
+				<div class="gift-sell-info">
+					<code class="zhekou">折扣</code>
+					<span class="title-desc">已满足下单立享88折</span>
+					<a href="#" class="addItem">去凑单 &gt;</a>
+				</div>
+			</div>
+		</div>
+		<div class="cart-table">
+			<ul class="table-group">
+				<!--<li class="sellItem clear">
+					<div class="pay-pro" style="width:368px;">
+						<i class="cart-item-checked">
+							<img class="quanxuan singleSelect" src="../images/weixuan2.png"/>
+							<img class="quanxuan singleSelect" src="../images/xuan2.png" style="display:none"/>
+						</i>
+						<a href="#" class="payGoods"><img src="../images/shiulian.jpg"/></a>
+						<p class="pay-pro-info">
+							<a href="#">RASEN family Icon++ 心动魔方 水粉蓝</a>
+							<em class="pay-pro-detail">
+								<span class="">
+									<b class="">颜色：蓝</b>尺码：F
+								</span>
+							</em>
+						</p>	
+					</div>
+					<div class="product-price price" style="width:148px;">45.00元</div>
+					<div class="adjust-cart-num" style="width:128px;">
+						<div class="cart-num-cont">
+							<span class="minus btn">-</span>
+							<input type="text" value=1 class="num"/>
+							<span class="add btn">+</span>
+						</div>
+					</div>
+					<div class="sub-total sum" style="width:160px;">45.00元</div>
+					<div class="cart-operation" style="width:100px;">
+						<span class="del cart-del-btn">删除</span>
+						<span class="cart-col-btn">移入收藏</span>
+					</div>
+				</li>-->
+			</ul>
+		</div>
+		<div class="submit">
+			<div class="fixed-option">
+				<span class="selectAll">全选</span>
+				<a href="#" class="delAll">删除选中商品</a>
+				<a href="#" class="removeAll">移入收藏夹</a>
+				<p class="select-num">已选商品
+					<strong class="ins">0</strong><strong class="ins" style="display:none">1</strong>件
+				</p>
+				<div class="price-sum">
+					<p class="sum1">应付金额（不含邮费）：
+						<strong class="money">0.00元</strong>
+					</p>
+					
+				</div>
+				<a href="#" class="btn-account" style="background-color:#b0b0b0;color:#fff;cursor:not-allowed;">去结算</a>
+				<a href="#" class="btn-account" style="display: none;background-color:#d0011b;color:#fff;cursor:pointer;">去结算</a>
+			</div>
+
+		</div>
+	</div>
+	
+
+	
+</section>
+<section id="kefu">
+		<div class="kefu-t margin">
+			<ul>
+				<li><a href="#"><i style="background:url(images/aaaa.png) no-repeat 1px 0px"></i>500强企业 品质保证</a></li>
+				<li><a href="#"><i style="background:url(images/aaaa.png) no-repeat -93px 0px"></i>7天退货 15天换货</a></li>
+				<li><a href="#"><i style="background:url(images/aaaa.png) no-repeat -140px 0px"></i>48元起免运费</a></li>
+				<li><a href="#"><i style="background:url(images/aaaa.png) no-repeat -46px 0px"></i>448家维修网点 全国联保</a></li>
+			</ul>
+		</div>
+		<div class="kefu-b margin clear">
+			<div class="kefu-b-l  clear">
+				<dl>
+					<p></p>
+					<dt>购物相关</dt>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">配送方式</a></dd>
+					<dd><a href="#">支付方式</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+				</dl>
+				<dl>
+					<p></p>
+					<dt>保修与退换货</dt>
+					<dd><a href="#">保修政策</a></dd>
+					<dd><a href="#">退换货政策</a></dd>
+					<dd><a href="#">退换货流程</a></dd>
+					<dd><a href="#">保修状态查询</a></dd>
+				</dl>
+				<dl>
+					<p></p>
+					<dt>维修与技术支持</dt>
+					<dd><a href="#">售后网点</a></dd>
+					<dd><a href="#">预约维修</a></dd>
+					<dd><a href="#">手机寄修</a></dd>
+					<dd><a href="#">维修配件价格查询</a></dd>
+				</dl>
+				<dl>
+					<p></p>
+					<dt>关于我们</dt>
+					<dd><a href="#">公司介绍</a></dd>
+					<dd><a href="#">华为商城简介</a></dd>
+					<dd><a href="#">华为线下门店</a></dd>
+					<dd><a href="#">荣耀线下门店</a></dd>
+					<dd><a href="#">诚征英才</a></dd>
+				</dl>
+				<dl>
+					<p></p>
+					<dt>关注我们</dt>
+					<dd><a href="#">新浪微博</a></dd>
+					<dd><a href="#">腾讯微博</a></dd>
+					<dd><a href="#">花粉俱乐部</a></dd>
+				</dl>
+				<dl>
+					<p></p>
+					<dt>友情链接</dt>
+					<dd><a href="#">华为官网</a></dd>
+					<dd><a href="#">华为消费者业务</a></dd>
+					<dd><a href="#">荣耀官网</a></dd>
+					<dd><a href="#">花粉俱乐部</a></dd>
+					<dd><a href="#">莫塞尔商城</a></dd>
+				</dl>
+			</div>
+			
+			<div class="kefu-b-r">
+				<p></p>
+				<h3>400-088-6888</h3>
+				<h4>24小时客服热线（仅收市话费）</h4>
+				<a href="#"><i></i>在线客服</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer margin clear">
+			<div class="footer-l">
+				<a href="#"><img src="images/flogo.png"/></a>
+			</div>
+			<div class="footer-c">
+				<p><a href="#">隐私政策</a><a href="#"> 服务协议</a> Copyright © 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</p>
+				<p>公安备案 <a href="#">苏公网安备32011402010009号</a><a href="#"> | 苏ICP备17040376号-6</a> | 增值电信业务经营许可证：苏B2-20130048号</p>
+				<p>网络文化经营许可证：<a href="#">苏网文[2015] 1599-026号</a></p>
+			</div>
+			<div class="footer-r">
+				<a href="#"><img src="images/20161224180914742.jpg"/></a>
+				<a href="#"><img src="images/20160226162415360.png"/></a>
+				<a href="#"><img src="images/20160226162521265.png"/></a>
+				<a href="#"><img src="images/20160226162531395.png"/></a>
+				<a href="#"><img src="images/20170725194955862.jpg"/></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="js/cookieTools.js" ></script>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+
+var jq = $.noConflict();
+var userName=getCookie("userName");
+var goodsId=getCookie("goodsId");
+
+jQuery(document).ready(function(){	
+	if(getCookie("userName")!=""){
+		jQuery(".mingzi").css("display","block")
+		jQuery("#name").html(getCookie("userName"));	 		
+		jQuery(".denglu").css("display","none")
+	}
+});
+
+jQuery("#zhuxiao").click(function(){
+	removeCookie("userName");
+	jQuery(".denglu").css("display","block")
+	jQuery(".mingzi").css("display","none")
+})
+
+//自动生成购物车
+function gongyong(userName){
+	jq(function(){
+		var zongji=0;
+		jq.get("php/getShoppingCart.php",{"userName":userName},function(data){
+			//console.log(data);
+			let obj=eval("("+data+")");
+			for(let i=0;i<obj.length;i++){
+				let goodsName=obj[i].goodsName;
+				let goodsId=obj[i].goodsId;
+				let goodsPrice=obj[i].goodsPrice;
+				let goodsCount=getCookie(obj[i].goodsCount);
+				console.log(goodsCount)
+				let goodsImg=obj[i].beiyong8;
+				let goodsDesc=obj[i].goodsDesc;
+				let goodsColor=obj[i].beiyong2;
+				let total=goodsPrice*goodsCount;
+				let str='<li class="sellItem clear"><div class="pay-pro" style="width:368px;"><i class="cart-item-checked"><img class="quanxuan singleSelect" src="images/weixuan2.png"/><img class="quanxuan singleSelect" src="images/xuan2.png" style="display:none"/></i><a href="#" class="payGoods"><img src="'+goodsImg+'"/></a><p class="pay-pro-info"><a href="#">'+goodsName+'</a><em class="pay-pro-detail"><span class=""><b class="">颜色:黑色</b></span></em></p></div><div class="product-price price" style="width:148px;">'+goodsPrice+'.00元</div><div class="adjust-cart-num" style="width:128px;"><div class="cart-num-cont"><span class="minus btn">-</span><input type="text" value='+goodsCount+' class="num"/><span class="add btn">+</span></div></div><div class="sub-total sum" style="width:160px;">'+total+'.00元</div><div class="cart-operation" style="width:100px;"><span class="del cart-del-btn">删除</span><span class="cart-col-btn">移入收藏</span></div></li>';
+
+				jq(".table-group").append(str);
+				zongji+=parseInt(goodsCount)*parseInt(goodsPrice);
+			}
+			jq(".money").html(zongji+".00元");
+			
+		});	
+	});
+}
+gongyong(userName);
+//添加数量
+jq(".cart-table").on("click",".add",function(){
+	var num=parseInt(jq(this).parent().find(".num").val());
+	num++;
+	jq(this).parent().find(".num").val(num);
+	var price=jq(this).parent().parent().siblings(".price").html();
+	var sum = parseFloat(price)*num;
+	jq(this).parent().parent().siblings(".sum").html(sum+".00元");
+	goodsCount=num;	
+	jq.get("php/updategoodsGoodsCount.php",{goodsId:goodsId,goodsCount:goodsCount},function(data){
+		console.log(data);
+	});
+	jq.get("php/updateGoodsCount.php",{userName:userName,goodsId:goodsId,goodsCount:num},function(data){
+		if(data=="1"){
+			location.href="gouwuche.html";
+		}else{
+			alert("保存失败")
+		}
+	});
+});
+//减少
+jq(".cart-table").on("click",".minus",function(){	
+	var num=jq(this).parent().find(".num").val();
+	num--;
+	if(num<=1){
+		num=1;
+	}
+	jq(this).parent().find(".num").val(num);
+	var price=jq(this).parent().parent().siblings(".price").html();
+	var sum=parseFloat(price)*num;
+	jq(this).parent().parent().siblings(".sum").html(sum+".00元");
+	goodsCount=num;	
+	jq.get("php/updategoodsGoodsCount.php",{goodsId:goodsId,goodsCount:goodsCount},function(data){
+		console.log(data);
+	});
+	jq.get("php/updateGoodsCount.php",{userName:userName,goodsId:goodsId,goodsCount:num},function(data){
+		if(data=="1"){
+			location.href="gouwuche.html";
+		}else{
+			alert("保存失败")
+		}
+	});
+});
+
+//删除
+//jq(".cart-table").on("click",".del",function(){
+//	jq.get("php/updategoodsGoodsCount.php",{goodsId:goodsId,goodsCount:1},function(data){
+//		console.log(data);
+//	});
+//	jq.get("php/deleteGoods.php",{userName:userName,goodsId:goodsId},function(data){
+//		if(data){
+//			location.href="gouwuche.html";
+//		}
+//	})
+//});
+
+
+
+jq(".cart-table").on("click",".del",function(){
+		   jq.ajax({
+		   	url: 'php/deleteGoods.php',
+		   	type: 'get',
+		   	
+		   	data: {
+		   		"vipName": userName,
+		   		"goodsId": jq(this).attr("goodsId"),
+		   	},
+		   	success:function(data){
+		   		if(data==1){
+					alert("删除成功");
+					location.href="gouwuche.html"
+				}else{
+					alert("失败")
+				}
+		   	}
+		   })
+		  
+		   
+	})
+//点击全选选中
+jq(".selectAll").click(function(){
+	jq(".quanxuan").toggle();
+	jq(".btn-account").toggle();
+});
+
+
+//点击单个商品选中
+jq(".cart-item-checked").click(function(){
+	//jq(".singleSelect").toggle();
+	//jq(".ins").toggle();
+	jq(".money").html(jq(".sum").html());
+});
+
+
+
+</script>

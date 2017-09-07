@@ -26,7 +26,7 @@ function changeyzm(){
 				success:function(data){
 					if(data=="1"){
 						//保存cookie
-						saveCookie("userId",$("#userId").val(),7);
+						saveCookie("userName",$("#userId").val(),7);
 						//saveCookie("userPass",$("#passId").val(),7);
 						location.href="shouye.html";
 					}else{

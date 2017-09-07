@@ -270,17 +270,3 @@ $(".a1").click(function(){
 	$(".xuan1").css({display:"block"})
 	$(".xuan").css({display:"none"})
 })
-
-var num=1
-	$(".shang").click(function(){
-		num++
-		$("#jianshu").val(num);
-	})
-	$(".xia").click(function(){
-		num--;
-		if(num<=0){num=1}
-		$("#jianshu").val(num);
-		
-	})
-
-

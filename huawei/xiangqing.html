@@ -269,7 +269,7 @@
 			<div class="main-b-r">
 				<div class="nova-t">
 					<div class="hezi">
-						<h3 class="mingzi"></h3>
+						<h3 class="ming"></h3>
 						<span></span>
 						<i class="i1"></i>
 						<i class="i2"></i>
@@ -326,7 +326,7 @@
 							<a href="javascript:;" class="xia">-</a>
 						</div>
 						<div class="num-r">
-							<a href="javascript:;">加入购物车</a>
+							<a id="add" href="javascript:;">加入购物车</a>
 							<a href="javascript:;" class="a">立即下单</a>
 						</div>
 					</div>
@@ -464,28 +464,31 @@
 <script type="text/javascript" src="js/cookieTools.js" ></script>
 <script type="text/javascript" src="js/xiangqing.js"></script>
 <script src="dist/js/swiper.min.js"></script>
-<script>        
+<script>
+	var userName=getCookie("userName");
+	var goodsId = getCookie("GoodsId");
+	console.log(getCookie("userName"))
 	$(document).ready(function(){
-	  	if(getCookie("userId")!=""){
+		
+	  	if(getCookie("userName")!=""){
 	  		$(".mingzi").css("display","block")
-	 		$("#name").html(getCookie("userId"));	 		
+	 		$("#name").html(getCookie("userName"));	 		
 	 		$(".denglu").css("display","none")
 	 	}
 	});
 	$("#zhuxiao").click(function(){
-		removeCookie("userId");
+		removeCookie("userName");
 		$(".denglu").css("display","block")
 		$(".mingzi").css("display","none")
 	})
 	
 	$(function(){
-		var goodsId = getCookie("GoodsId");
 		console.log(goodsId)
 		$.get("php/getGoodsInfo.php",{"goodsId":goodsId},function(date){	
 		var obj=eval("("+date+")");
 		console.log(obj);
 		$(".jiage").html("抢购价 ￥"+obj.goodsPrice);
-		$(".mingzi").html(obj.goodsName);
+		$(".ming").html(obj.goodsName);
 		$(".miao").html(obj.beiyong1);
 		$(".img").attr("src",obj.beiyong2); 
 		$(".main-b-l").children().children("ul").children("li").eq(1).children("img").attr("src",obj.beiyong3);
@@ -494,5 +497,47 @@
 		$(".main-b-l").children().children("ul").children("li").eq(4).children("img").attr("src",obj.beiyong6);
 		$(".main-b-l").children().children("ul").children("li").eq(5).children("img").attr("src",obj.beiyong7);
 	})
-})	
+})
+	
+	
+	
+	
+	$(".xia").click(function(){
+		let num = Number($("#jianshu").val())
+	   	num--;
+		if(num<=0){
+			num=1
+		}
+ 		$("#jianshu").val(num)
+	})
+	$(".shang").click(function(){
+		let num = Number($("#jianshu").val())
+		num++;
+	 	$("#jianshu").val(num)
+	})
+		//console.log(Number($("#jianshu").val()))
+setTimeout(function(){
+	$("#add").click(function() {
+		let num = Number($("#jianshu").val())
+	    //saveCookie(goodsId,num,1)
+		$.ajax({
+				url: 'php/addShoppingCart.php',
+				type: 'get',
+				data:{
+					"vipName":userName,
+					"goodsId":goodsId,
+					"goodsCount":num,
+				},
+				success:function (data){
+					if(data==1){
+						alert("添加成功");
+						location.href="gouwuche.html"
+					}else{
+						alert("失败")
+					}
+				}
+			})
+	});
+
+},100)
 </script>

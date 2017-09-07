@@ -77,7 +77,7 @@
 					<span>|</span>
 				</li>
 				<li>
-					<a class="gouwuche" href="#">购物车</a>
+					<a class="gouwuche" href="gouwuche.html">购物车</a>
 				</li>
 			</ul>
 		</div>
@@ -836,14 +836,14 @@
   	})
 	
 	$(document).ready(function(){
-	  	if(getCookie("userId")!=""){
+	  	if(getCookie("userName")!=""){
 	  		$(".mingzi").css("display","block")
-	 		$("#name").html(getCookie("userId"));	 		
+	 		$("#name").html(getCookie("userName"));	 		
 	 		$(".denglu").css("display","none")
 	 	}
 	});
 	$("#zhuxiao").click(function(){
-		removeCookie("userId");
+		removeCookie("userName");
 		$(".denglu").css("display","block")
 		$(".mingzi").css("display","none")
 	})

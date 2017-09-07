@@ -89,7 +89,7 @@ $("#btn").click(function(){
 			success:function(data){
 				//console.log(data)
 				if(data=="1"){					
-					location.href="shouye.html";
+					location.href="denglu.html";
 					}else{
 						alert("您输入的有误，请检查注册")
 					}
